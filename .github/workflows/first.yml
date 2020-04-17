@@ -19,3 +19,13 @@ jobs:
           uses: actions/checkout@v2
         - name: Step two
           run: "Get-ChildItem Env: | Sort-Object Name"
+    job3:
+        name: Run shell command
+          runs-on: ubuntu-latest
+          steps:
+            - name: echo a string
+              run: echo "Hello World"
+            - name: Multiline script
+              run: |
+                node -v
+                npm -v
