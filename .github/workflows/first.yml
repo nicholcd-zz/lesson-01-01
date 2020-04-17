@@ -21,11 +21,11 @@ jobs:
           run: "Get-ChildItem Env: | Sort-Object Name"
     job3:
         name: Run shell command
-          runs-on: ubuntu-latest
-          steps:
-            - name: echo a string
-              run: echo "Hello World"
-            - name: Multiline script
-              run: |
-                node -v
-                npm -v
+        runs-on: ubuntu-latest
+        steps:
+        - name: echo a string
+          run: echo "Hello World"
+        - name: Multiline script
+          run: |
+            node -v
+            npm -v
